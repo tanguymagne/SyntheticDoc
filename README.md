@@ -1,10 +1,10 @@
 # SyntheticDoc: A Large Synthetic Dataset for Document Unwarping and Illumination Correction
 
-[Daniel Woortmann](https://ch.linkedin.com/in/daniel-woortmann-915583224/)*, [Tanguy Magne*](https://tanguymagne.com/), [Olga Sorkine-Hornung](https://igl.ethz.ch/people/sorkine/index.php)<br />
+[Daniel Woortmann](https://ch.linkedin.com/in/daniel-woortmann-915583224/)\*, [Tanguy Magne](https://tanguymagne.com/)\*, [Olga Sorkine-Hornung](https://igl.ethz.ch/people/sorkine/index.php)<br />
 \* Equal contribution
 
 
-<a href="https://igl.ethz.ch/projects/SyntheticDoc/"><img src="https://img.shields.io/badge/🔗%20Website-Project%20page-99cc33" alt="website"></a>
+<a href="https://igl.ethz.ch/projects/SyntheticDoc/"><img src="https://img.shields.io/badge/🔗%20Website-Project%20page-99cc33?style=flat-square" alt="website"></a>
 <a href="https://doi.org/10.3929/ethz-c-000801994"><img src="https://img.shields.io/badge/📁%20Dataset-SyntheticDoc-02c39a?style=flat-square" alt="dataset"></a>
 <!-- <a href="https://igl.ethz.ch/projects/syntheticdoc/" alt ="paper"> <img src="https://img.shields.io/badge/📄%20Paper-PDF_(23.3MB)-b31b1b"/></a> -->
 <!-- <a href="https://doi.org/" alt="doi"><img src="https://img.shields.io/badge/DOI-10.1111%2Fcgf.70502-red?logo=doi&color=fab608" alt="website"></a> -->
