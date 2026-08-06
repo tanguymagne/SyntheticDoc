@@ -1,0 +1,8 @@
+# PyTorch itself is not listed here on purpose: install the build matching your
+# CUDA version first, following https://pytorch.org/get-started/locally/
+lightning>=2.4
+webdataset>=1.0
+braceexpand>=0.1.7
+numpy>=1.26
+pillow>=10.0
+pyyaml>=6.0

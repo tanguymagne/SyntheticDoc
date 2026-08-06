@@ -22,9 +22,9 @@ Documentation about the currently released dataset can be found [here](https://g
 
 ## 💻 Code
 
-The code to generate the dataset and train the model will be released soon. Stay tuned!
+The code to train the model and to run it on your own images is available in the [`training`](https://github.com/tanguymagne/SyntheticDoc/blob/main/training) folder.
 
-<!-- The code for the model training and the model itself is partially based on the [UVDoc](https://github.com/tanguymagne/UVDoc). -->
+The code to generate the dataset will be released soon. Stay tuned!
 
 ## 🪪 Citation
 

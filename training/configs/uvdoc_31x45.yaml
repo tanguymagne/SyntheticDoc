@@ -1,0 +1,64 @@
+# Configuration for document unwarping training with WebDataset
+
+# Random seed for reproducibility
+seed: 0
+
+# Model configuration
+model:
+  num_filter: 32
+  kernel_size: 5
+
+# Data configuration
+data:
+  # Shard patterns using brace expansion
+  # Example: 'path/to/shards/{000..010}.tar' loads shards 0-10
+  train_shard_pattern: 'data/train/train_{000..999}.zip'
+  val_shard_pattern: 'data/val/val_{000..099}.zip'
+
+  # Image processing
+  image_size: [720, 512]  # [H, W] the input is resized to
+  normalize: true
+  crop_input: true
+  augmentation: true
+
+  # Backward map resolution, as [rows, cols] of the predicted grid.
+  bm_out_size: [31, 45]
+  
+  # WebDataset-specific settings
+  num_workers: 10
+  shuffle_buffer: 2000  # Larger = better shuffling, more memory. Set to 0 for no shuffle (val).
+
+# Training configuration
+training:
+  num_epochs: 50
+  batch_size: 16
+  learning_rate: 1.0e-4
+  weight_decay: 1.0e-4
+  
+  # Learning rate scheduler
+  scheduler:
+    type: 'cosine'  # 'cosine', 'step', or null
+  
+  # Loss configuration
+  loss:
+    loss_type: 'l1'  # 'l1' or 'l2'
+    bm_weight: 1.0
+    shadow_weight: 0.5
+    recon_weight: 0.5
+  
+  # Checkpoint saving
+  save_every: 1  # Save checkpoint every N epochs
+
+# Validation configuration
+validation:
+  val_every: 1  # Validate every N epochs
+
+# Paths
+paths:
+  checkpoint_dir: 'checkpoints'
+  log_dir: 'logs'
+
+# Logging
+logging:
+  experiment_name: 'uvdoc-31x45'
+  log_every: 100  # Log every N batches

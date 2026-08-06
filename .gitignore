@@ -1,0 +1,12 @@
+# General
+.vscode/
+
+# Python related
+__pycache__
+
+# Repo specific
+training/data/**/
+training/checkpoints/
+training/logs/
+training/model/*.ckpt
+training/dataset_debug.py
