@@ -5,8 +5,16 @@
 __pycache__
 
 # Repo specific
+generation/simulation/arcsim-0.2.1/
+generation/simulation/configs/**/
+generation/simulation/meshes/**/
+
 training/data/**/
 training/checkpoints/
 training/logs/
 training/model/*.ckpt
 training/dataset_debug.py
+
+# Other
+*.ini
+*.zip

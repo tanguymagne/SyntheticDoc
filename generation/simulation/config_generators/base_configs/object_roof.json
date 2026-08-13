@@ -1,0 +1,17 @@
+{
+    "mesh": "./config_generators/assets/meshes/gable.obj",
+    "transform": {
+        "translate": [
+            0,
+            -0.1,
+            0.05
+        ],
+        "rotate": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "scale": 0.05
+    }
+}

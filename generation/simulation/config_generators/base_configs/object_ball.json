@@ -1,0 +1,17 @@
+{
+    "mesh": "./config_generators/assets/meshes/sphere.obj",
+    "transform": {
+        "translate": [
+            0,
+            -0.1,
+            0.05
+        ],
+        "rotate": [
+            90,
+            0,
+            1,
+            0
+        ],
+        "scale": 0.05
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "frame_time": 0.04,
+    "frame_steps": 40,
+    "end_time": 10,
+    "cloths": [
+        {
+            "mesh": "./config_generators/assets/meshes/a4_subdivision_outline.obj",
+            "transform": {
+                "translate": [
+                    0,
+                    0,
+                    1e-3
+                ]
+            },
+            "materials": [
+                {
+                    "data": "./config_generators/assets/materials/paper.json",
+                    "yield_curv": 200,
+                    "weakening": 1
+                }
+            ],
+            "remeshing": {
+                "refine_angle": 0.2,
+                "refine_compression": 0.1e-3,
+                "size": [
+                    3e-3,
+                    100e-3
+                ],
+                "aspect_min": 0.2
+            }
+        }
+    ],
+    "motions": [],
+    "handles": [
+        {
+            "nodes": [
+            ],
+            "motion": 0,
+            "start_time": 0,
+            "end_time": 7.5,
+            "fade_time": 1
+        }
+    ],
+    "obstacles": [
+        {
+            "mesh": "./config_generators/assets/meshes/square.obj",
+            "transform": {
+                "translate": [
+                    -0.5,
+                    -0.5,
+                    0
+                ]
+            }
+        },
+        {
+            "mesh": "./config_generators/assets/meshes/roller.obj",
+            "transform": {
+                "rotate": [
+                    90,
+                    1,
+                    2,
+                    0
+                ],
+                "scale": 0.05
+            },
+            "motion": 1
+        }
+    ],
+    "gravity": [
+        0,
+        0,
+        -9.8
+    ],
+    "obs_friction": 2,
+    "disable": [
+        "strainlimiting"
+    ],
+    "magic": {
+        "collision_stiffness": 1e11,
+        "handle_stiffness": 1e4
+    }
+}
