@@ -1,7 +1,6 @@
 """Run arcsim on generated configs and keep only the meshes needed downstream."""
 
 import argparse
-import json
 import re
 import subprocess
 from pathlib import Path
@@ -13,24 +12,6 @@ def run_simulation(scenario, id):
     config_path = parent_dir / "configs" / scenario / f"{id:05d}.json"
     save_path = parent_dir / "meshes" / scenario / f"{id:05d}"
     save_path.mkdir(parents=True, exist_ok=True)
-
-    # Override the time step of the config, the faster the collisions the finer it has to be.
-    # The fold scenario is slow enough to run with the time step of its base config.
-    if scenario != "fold_by_pull":
-        with Path(config_path).open("r") as f:
-            config = json.load(f)
-        if scenario == "fall_on_roof" or scenario == "fall_on_ball":
-            config["frame_time"] = 0.001
-            config["frame_steps"] = 1
-        elif scenario == "fall_on_many":
-            config["frame_time"] = 0.0005
-            config["frame_steps"] = 1
-        elif scenario == "fall_on_roller" or scenario == "curve_by_pull":
-            config["frame_time"] = 0.005
-            config["frame_steps"] = 5
-
-        with config_path.open("w") as f:
-            json.dump(config, f, indent=4)
 
     arcsim_path = parent_dir / "arcsim-0.2.1" / "bin" / "arcsim"
     cmd = f"{arcsim_path} simulateoffline {config_path} {save_path}"

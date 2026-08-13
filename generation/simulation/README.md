@@ -79,7 +79,7 @@ Each scenario is one file in `config_generators/`, holding a subclass of `Config
 2. `set_parameters` — declare the range each randomised quantity is drawn from, such as the gravity or the number of obstacles.
 3. `generate` — draw the random values, write them into a copy of the skeleton, and save it.
 
-Then register the new class in `generate_configs.py`, so that it can be called by name, and give it a time step in `simulate.py`. The faster the collisions of a scenario, the finer its time step has to be.
+Then register the new class in `generate_configs.py`, so that it can be called by name.
 
 ---
 
