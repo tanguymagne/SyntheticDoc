@@ -24,7 +24,7 @@ The assets it was generated from (meshes, document pages and background material
 
 ## 💻 Code
 
-The code to generate the dataset is now available too, in two stages: [`generation/simulation`](https://github.com/tanguymagne/SyntheticDoc/blob/main/generation/simulation) simulates the deformed paper meshes, and [`generation/rendering`](https://github.com/tanguymagne/SyntheticDoc/blob/main/generation/rendering) renders them into images and annotations.
+The code to generate the dataset is now available: [`generation/simulation`](https://github.com/tanguymagne/SyntheticDoc/blob/main/generation/simulation) simulates the deformed paper meshes, and [`generation/rendering`](https://github.com/tanguymagne/SyntheticDoc/blob/main/generation/rendering) renders the final samples (images and annotations).
 
 The code to train the model and to run it on your own images is available in the [`training`](https://github.com/tanguymagne/SyntheticDoc/blob/main/training) folder.
 
