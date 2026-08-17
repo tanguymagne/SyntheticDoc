@@ -5,6 +5,13 @@
 __pycache__
 
 # Repo specific
+generation/rendering/backgrounds/**/
+generation/rendering/documents/**/
+generation/rendering/materials/**/
+generation/rendering/meshes/**/
+generation/rendering/blender*/
+generation/rendering/renders/**/
+
 generation/simulation/arcsim-0.2.1/
 generation/simulation/configs/**/
 generation/simulation/meshes/**/

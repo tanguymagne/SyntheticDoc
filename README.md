@@ -20,11 +20,13 @@ Our dataset is available [here](https://doi.org/10.3929/ethz-c-000801994). Note 
 
 Documentation about the currently released dataset can be found [here](https://github.com/tanguymagne/SyntheticDoc/blob/main/DATASET.md).
 
+The assets it was generated from (meshes, document pages and background materials) are available [here](http://hdl.handle.net/20.500.11850/804058).
+
 ## 💻 Code
 
-The code to train the model and to run it on your own images is available in the [`training`](https://github.com/tanguymagne/SyntheticDoc/blob/main/training) folder.
+The code to generate the dataset is now available too, in two stages: [`generation/simulation`](https://github.com/tanguymagne/SyntheticDoc/blob/main/generation/simulation) simulates the deformed paper meshes, and [`generation/rendering`](https://github.com/tanguymagne/SyntheticDoc/blob/main/generation/rendering) renders them into images and annotations.
 
-The code to generate the dataset will be released soon. Stay tuned!
+The code to train the model and to run it on your own images is available in the [`training`](https://github.com/tanguymagne/SyntheticDoc/blob/main/training) folder.
 
 ## 🪪 Citation
 

@@ -1,0 +1,1 @@
+Document textures should be placed here.
