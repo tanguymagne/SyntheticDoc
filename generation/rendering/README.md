@@ -13,12 +13,15 @@ The code is modular: each component of the scene (camera, lighting, materials, e
 ---
 
 ## 📋 Table of Contents
-- [🛠️ Installation](#️-installation)
-- [📁 Assets](#-assets)
-- [🚀 Rendering](#-rendering)
-- [🖼️ Outputs](#️-outputs)
-- [⚙️ Configuration](#️-configuration)
-- [⚠️ Known limitations](#️-known-limitations)
+- [🎨 Dataset Rendering](#-dataset-rendering)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [🛠️ Installation](#️-installation)
+  - [📁 Assets](#-assets)
+  - [🚀 Rendering](#-rendering)
+    - [Rendering a single sample](#rendering-a-single-sample)
+  - [🖼️ Outputs](#️-outputs)
+  - [⚙️ Configuration](#️-configuration)
+  - [⚠️ Known limitations](#️-known-limitations)
 
 ---
 
@@ -42,7 +45,7 @@ Rendering needs three kinds of assets:
 | **Documents**   | `.png` page images              | Any collection of document page renders                                    |
 | **Backgrounds** | Directories of PBR texture maps | Any PBR material library                                                   |
 
-The exact assets used to render SyntheticDoc can be downloaded from the [ETH Research Collection](http://hdl.handle.net/20.500.11850/804058). Extract them so that the three asset folders sit next to the code:
+The exact assets used to render SyntheticDoc can be downloaded from the [ETH Research Collection](https://doi.org/10.3929/ethz-c-000804058). Extract them so that the three asset folders sit next to the code:
 
 ```
 generation/rendering/

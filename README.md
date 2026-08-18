@@ -6,8 +6,8 @@
 
 <a href="https://igl.ethz.ch/projects/SyntheticDoc/"><img src="https://img.shields.io/badge/🔗%20Website-Project%20page-99cc33?style=flat-square" alt="website"></a>
 <a href="https://doi.org/10.3929/ethz-c-000801994"><img src="https://img.shields.io/badge/📁%20Dataset-SyntheticDoc-02c39a?style=flat-square" alt="dataset"></a>
-<!-- <a href="https://igl.ethz.ch/projects/syntheticdoc/" alt ="paper"> <img src="https://img.shields.io/badge/📄%20Paper-PDF_(23.3MB)-b31b1b"/></a> -->
-<!-- <a href="https://doi.org/" alt="doi"><img src="https://img.shields.io/badge/DOI-10.1111%2Fcgf.70502-red?logo=doi&color=fab608" alt="website"></a> -->
+<a href="https://igl.ethz.ch/projects/SyntheticDoc/syntheticdoc-eccv-2026-woortmann-et-al.pdf" alt ="paper"> <img src="https://img.shields.io/badge/📄%20Paper-PDF_(18.1MB)-b31b1b?style=flat-square"/></a>
+
 
 
 ![Header](media/teaser.jpg)
@@ -20,7 +20,7 @@ Our dataset is available [here](https://doi.org/10.3929/ethz-c-000801994). Note 
 
 Documentation about the currently released dataset can be found [here](https://github.com/tanguymagne/SyntheticDoc/blob/main/DATASET.md).
 
-The assets it was generated from (meshes, document pages and background materials) are available [here](http://hdl.handle.net/20.500.11850/804058).
+The assets it was generated from (meshes, document pages and background materials) are available [here](https://doi.org/10.3929/ethz-c-000804058).
 
 ## 💻 Code
 
