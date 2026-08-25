@@ -1,0 +1,4 @@
+numpy
+scipy
+OpenEXR>=3.2
+tqdm

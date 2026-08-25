@@ -4,7 +4,7 @@
 
 This folder contains everything needed to turn the deformed paper meshes into the rendered images and ground truth annotations that make up the SyntheticDoc dataset. Rendering is done with [Blender](https://www.blender.org/)'s Cycles path tracer, driven entirely from Python.
 
-Each sample is a rendering of one document image, textured onto one deformed paper mesh, lying on one background material. It is accompanied by several groundt truth annotations.
+Each sample is a rendering of one document image, textured onto one deformed paper mesh, lying on one background material. It is accompanied by several ground truth annotations.
 
 The code is modular: each component of the scene (camera, lighting, materials, environment, mesh) lives in its own file, and `single_sample_renderer.py` assembles them.
 
@@ -13,15 +13,12 @@ The code is modular: each component of the scene (camera, lighting, materials, e
 ---
 
 ## 📋 Table of Contents
-- [🎨 Dataset Rendering](#-dataset-rendering)
-  - [📋 Table of Contents](#-table-of-contents)
-  - [🛠️ Installation](#️-installation)
-  - [📁 Assets](#-assets)
-  - [🚀 Rendering](#-rendering)
-    - [Rendering a single sample](#rendering-a-single-sample)
-  - [🖼️ Outputs](#️-outputs)
-  - [⚙️ Configuration](#️-configuration)
-  - [⚠️ Known limitations](#️-known-limitations)
+- [🛠️ Installation](#️-installation)
+- [📁 Assets](#-assets)
+- [🚀 Rendering](#-rendering)
+- [🖼️ Outputs](#️-outputs)
+- [⚙️ Configuration](#️-configuration)
+- [⚠️ Known limitations](#️-known-limitations)
 
 ---
 
@@ -122,13 +119,15 @@ renders/0000000/
 ├── normal.exr        # Surface normal of every visible point
 └── metadata.json     # Assets, camera angle and status of the sample
 ```
-Additionaly, a `.blend` file of the scene can saved on request.
+Additionally, a `.blend` file of the scene can be saved on request.
+
+The `backward_map.npy` that the released dataset also ships for every sample is not produced here: it is computed from `uv_inverse.exr` afterwards, by [`backward_mapping`](../backward_mapping).
 
 ---
 
 ## ⚙️ Configuration
 
-`config.py` holds every tunable parameter of the rendering, grouped into sections: render, object, camera, lighting, physics and materials settings. The values there are the ones SyntheticDoc was rendered with. 
+`config.py` holds every tunable parameter of the rendering, grouped into sections: render, object, camera, lighting, physics and materials settings. The values there are the ones SyntheticDoc was rendered with.
 
 ---
 
