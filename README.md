@@ -4,7 +4,7 @@
 \* Equal contribution
 
 
-<a href="https://igl.ethz.ch/projects/SyntheticDoc/"><img src="https://img.shields.io/badge/🔗%20Website-Project%20page-99cc33?style=flat-square" alt="website"></a>
+<a href="https://tanguymagne.com/publications/synthetic-doc/"><img src="https://img.shields.io/badge/🔗%20Website-Project%20page-99cc33?style=flat-square" alt="website"></a>
 <a href="https://doi.org/10.3929/ethz-c-000801994"><img src="https://img.shields.io/badge/📁%20Dataset-SyntheticDoc-02c39a?style=flat-square" alt="dataset"></a>
 <a href="https://igl.ethz.ch/projects/SyntheticDoc/syntheticdoc-eccv-2026-woortmann-et-al.pdf" alt ="paper"> <img src="https://img.shields.io/badge/📄%20Paper-PDF_(18.1MB)-b31b1b?style=flat-square"/></a>
 
