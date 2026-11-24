@@ -140,6 +140,8 @@ The two pretrained models should be downloaded and placed in the `model` folder:
 - [Original 31 × 45 model](https://igl.ethz.ch/projects/SyntheticDoc/original_31x45.ckpt)
 - [High-resolution 121 × 177 model](https://igl.ethz.ch/projects/SyntheticDoc/highres_121x177.ckpt)
 
+Like the code, the pretrained checkpoints are released under the [MIT license](../LICENSE).
+
 To unwarp a folder of images with a trained model:
 
 ```bash
